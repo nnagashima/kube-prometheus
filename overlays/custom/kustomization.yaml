@@ -9,10 +9,3 @@ resources:
 patchesStrategicMerge:
   - patch-grafana-svc.yaml
   - patch-prometheus-svc.yaml
-
-# namespace を overlay で統一
-namespace: monitoring
-
-# オプション: ArgoCD で prune/replace されてもリソースが消えないように
-commonLabels:
-  app.kubernetes.io/managed-by: kustomize
