@@ -1,0 +1,6 @@
+resources:
+  - ../../manifests
+
+patchesStrategicMerge:
+  - patch-grafana-svc.yaml
+  - patch-prometheus-svc.yaml
