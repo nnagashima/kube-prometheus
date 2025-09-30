@@ -6,7 +6,7 @@ resources:
   - ../../manifests
 
 # Service の patch を適用
-patches:
+patchesStrategicMerge:
   - patch-grafana-svc.yaml
   - patch-prometheus-svc.yaml
 
